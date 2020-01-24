@@ -1,0 +1,10 @@
+<table class="table table-striped">
+  <tbody>
+    {% for key in ["Training Accuracy", "Testing Accuracy", "Positive Tumor Score", "Negative Tumor Score"] %}
+    <tr>
+      <td><b>{{ key|e|capitalize }}</b></td>
+      <td>{{ data[key]|e }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
